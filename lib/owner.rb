@@ -12,19 +12,19 @@ class Owner
   end
 
   def self.all
-    @@all
+    self.all
   end
 
   def self.count
-    @@all.count
+    self.all.count
   end
 
   def self.reset_all
-    @@all = []
+    self.all = []
   end
 
   def say_species
-    "I am a #{@species}."
+    "I am a #{self.species}."
   end
 
   def buy_fish(name)
